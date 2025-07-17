@@ -1,0 +1,103 @@
+## 📁 1. Lead Management System (LMS) – Project Blueprint
+**Goal:** Automate lead tracking across 5 sales channels using web/mobile platform.  
+**Tools Used:** Figma, JIRA, Confluence, SQL, REST APIs  
+**What’s Included:**
+- `Product_Requirements.md` – High-level PRD with acceptance criteria
+- `User_Journey_Map.png` – Visual flow from lead generation to conversion
+- `Backlog_Grooming_Sheet.xlsx` – Sample prioritization matrix
+
+### 📄 Product Requirements Document (PRD): Lead Management System
+
+**Product Name:** Samarth LMS  
+**Owner:** Harshita Srivastava  
+**Date:** July 2024
+
+---
+
+### 🔹 1. Objective
+To build a centralized Lead Management System (LMS) that captures real-time leads from the website and mobile apps, and automatically routes them to the CRM for follow-up by relevant sales teams.
+
+### 🔹 2. Problem Statement
+Currently, leads are collected through multiple disjointed systems, leading to delays in sales follow-up, lost opportunities, and inconsistent tracking.
+
+### 🔹 3. Goals
+- Capture and store leads from multiple digital channels (website, mobile apps)
+- Enable real-time lead routing to CRM with zero manual intervention
+- Track lead progress through various sales stages
+
+### 🔹 4. Scope
+**In Scope:**
+- Lead form integration on website and mobile apps
+- API-based data transfer to CRM (Salesforce/ZOHO/Custom)
+- Dashboard for lead tracking and performance metrics
+
+**Out of Scope:**
+- Manual lead upload/import
+- Call center integrations (in phase 2)
+
+### 🔹 5. Features & Requirements
+| Feature | Description |
+|--------|-------------|
+| Lead Capture | Capture user inputs (name, number, email, interest) from apps and web |
+| CRM Integration | Use REST API to push lead data to CRM in real-time |
+| Lead Tagging | Tag leads by source, campaign, and timestamp |
+| Notifications | Notify sales teams via CRM/email upon new lead arrival |
+| Dashboard | Display real-time lead flow and follow-up status |
+| Retry Logic | Handle failed API transmissions with retry rules |
+
+### 🔹 6. User Stories
+- *As a user*, I want to submit my details on the app so that I can be contacted quickly.
+- *As a sales manager*, I want to see leads in my CRM instantly so I can take action.
+- *As a product analyst*, I want to track the lead source and status to evaluate campaign performance.
+
+### 🔹 7. Acceptance Criteria
+- [ ] Lead captured from form is pushed to CRM within 10 seconds
+- [ ] Lead source and timestamp are visible in CRM
+- [ ] System retries on failure up to 3 times
+- [ ] Dashboard updates in real-time
+
+### 🔹 8. Metrics & KPIs
+- Lead delivery success rate ≥ 99%
+- CRM sync time ≤ 10 seconds
+- Conversion rate by channel
+- Drop-off rates in lead journey
+
+### 🔹 9. Dependencies
+- Frontend team for form development
+- CRM team for API access
+- QA team for integration testing
+
+### 🔹 10. Timeline
+| Milestone | Date |
+|----------|------|
+| Requirements Finalized | July 20, 2024 |
+| Development Start | Aug 01, 2024 |
+| UAT | Aug 25, 2024 |
+| Go-Live | Sept 05, 2024 |
+
+---
+
+## 📁 2. API Integration Sample – Insurance Quote Engine
+**Goal:** Fetch and normalize insurance quotes from multiple partners.  
+**Tools Used:** Postman, Swagger, Python, JSON
+- `api_specifications.yaml` – Sample OpenAPI doc for quote API
+- `api_response_mapping.py` – Python snippet showing quote normalization
+- `Postman_Collection.json` – Sample API testing setup
+
+---
+
+## 📁 3. Power BI Dashboard (Mock Data)
+**Goal:** Track product KPIs – NPS, conversion rate, issue resolution TAT.  
+**Tools Used:** Excel, Power BI Desktop
+- `Product_KPIs.pbix` – Sample dashboard file (mock data)
+- `Metrics_Design.md` – Logic behind chosen KPIs
+
+---
+
+## 📁 4. Prompt Engineering for Customer Support
+**Goal:** Reduce support queries by integrating AI-powered chatbot.  
+**Tools Used:** Google GenAI, Python
+- `Prompt_Design_Samples.md` – AI prompt structure to address common queries
+- `Intent_Classification.py` – Simple logic to route queries to right flows
+
+---
